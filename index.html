@@ -34,47 +34,56 @@
                         The new way to PC. Galaxy Book.</p>
                     <div class="mt-3">
                         <h6 class="fw-bold">Memory</h5>
-                            <button type="button" class="btn btn-outline-dark">8GB RAM</button>
-                            <button type="button" class="btn btn-outline-dark">16GB RAM</button>
+                            <button id="8gb-button" type="button" class="btn btn-outline-dark click-button">8GB
+                                RAM</button>
+                            <button id="16gb-button" type="button" class="btn btn-outline-dark click-button">16GB
+                                RAM</button>
                     </div>
                     <div class="mt-3">
                         <h6 class="fw-bold">Storage</h5>
-                            <button type="button" class="btn btn-outline-dark">256GB M.2 SSD</button>
-                            <button type="button" class="btn btn-outline-dark">512GB M.2 SSD</button>
-                            <button type="button" class="btn btn-outline-dark">1TB M.2 SSD</button>
+                            <button id="256gb-ssd" type="button" class="btn btn-outline-dark click-button">256GB M.2
+                                SSD</button>
+                            <button id="512gb-ssd" type="button" class="btn btn-outline-dark click-button">512GB M.2
+                                SSD</button>
+                            <button id="1tb-ssd" type="button" class="btn btn-outline-dark click-button">1TB M.2
+                                SSD</button>
                     </div>
                     <div class="mt-3">
                         <h6 class="fw-bold">Choose your delivery option</h5>
-                            <button type="button" class="btn btn-outline-dark">Friday, Mar 15 FREE Prime
+                            <button id="standard-delivery" type="button"
+                                class="btn btn-outline-dark click-button">Friday, Mar 15
+                                FREE Prime
                                 Delivery</button>
-                            <button type="button" class="btn btn-outline-dark">Friday, Mar 10 Delivery charge
+                            <button id="fast-delivery" type="button" class="btn btn-outline-dark click-button">Friday,
+                                Mar 10
+                                Delivery charge
                                 $20</button>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 ">
                             <div class="d-flex justify-content-between mt-4">
                                 <h6 class="fw-bold">Best Price</h6>
-                                <h6 class="fw-bold">$1099</h6>
+                                <h6 class="fw-bold">$<span id="product-price">1099</span> </h6>
                             </div>
                             <hr class="mt-1">
                             <div class="d-flex justify-content-between">
                                 <h6 class="fw-bold">Extra Memory Cost</h6>
-                                <h6 class="fw-bold">$0</h6>
+                                <h6 class="fw-bold">$<span id="memory-price">0</span></h6>
                             </div>
                             <hr class="mt-1">
                             <div class="d-flex justify-content-between">
                                 <h6 class="fw-bold">Extra Storage Cost</h6>
-                                <h6 class="fw-bold">$0</h6>
+                                <h6 class="fw-bold">$<span id="storage-price">0</span></h6>
                             </div>
                             <hr class="mt-1">
                             <div class="d-flex justify-content-between">
                                 <h6 class="fw-bold">Delivery charge</h6>
-                                <h6 class="fw-bold">$0</h6>
+                                <h6 class="fw-bold">$<span id="delivery-cost">0</span></h6>
                             </div>
                             <hr class="mt-1 custom-bold">
                             <div class="d-flex justify-content-between">
                                 <h6 class="fw-bold">Total Price</h6>
-                                <h6 class="fw-bold">$1099</h6>
+                                <h6 class="fw-bold">$<span id="total-price">1099</span> </h6>
                             </div>
                             <div class="mt-2">
                                 <h6>Add Pomo code</h6>
@@ -94,9 +103,7 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
