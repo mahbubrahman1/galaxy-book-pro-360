@@ -3,7 +3,9 @@ const memoryPrice = document.getElementById('memory-price');
 const storagePrice = document.getElementById('storage-price');
 const deliveryCost = document.getElementById('delivery-cost');
 const totalPrice = document.getElementById('total-price');
-const productPrice = document.getElementById('product-price')
+const productPrice = document.getElementById('product-price');
+const inputField = document.getElementById('input-field');
+const payPrice = document.getElementById('pay-price');
 
 // addeed event handler
 function buttonWork() {
@@ -33,6 +35,25 @@ function buttonWork() {
 // calculation 
 function updatePrice() {
     totalPrice.innerText = parseInt(memoryPrice.innerText) + parseInt(productPrice.innerText) + parseInt(storagePrice.innerText) + parseInt(deliveryCost.innerText);
+
+    payPrice.innerText = totalPrice.innerText;
 }
 
 buttonWork();
+
+// promo code 
+function promoCode(click) {
+    if (click.value.toLowerCase() == 'mygalaxy') {
+        const discountPrice = parseInt(totalPrice.innerText) * 20;
+        const newPrice = discountPrice / 100;
+        payPrice.innerText = totalPrice.innerText - newPrice;
+    } else {
+        alert('invalid promo code!');
+    }
+    inputField.value = '';
+}
+
+// added event listener in promo code button
+document.getElementById('apply-button').addEventListener('click', function () {
+    promoCode(inputField);
+})
