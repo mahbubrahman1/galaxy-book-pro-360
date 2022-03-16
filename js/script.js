@@ -7,7 +7,7 @@ const productPrice = document.getElementById('product-price');
 const inputField = document.getElementById('input-field');
 const payPrice = document.getElementById('pay-price');
 
-// addeed event handler
+// added event handler
 function buttonWork() {
     const allButton = document.getElementsByClassName('click-button');
     for (const button of allButton) {
